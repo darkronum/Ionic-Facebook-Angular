@@ -1,0 +1,129 @@
+<ion-header [translucent]="true">
+
+  <div class="main-menu">
+    <h3>facebook</h3>
+    <div class="primary-menu">
+      <ion-icon name="search"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Slider container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+    </div>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Nova postagem -->
+<div class="new-post">
+  <ion-avatar>
+    <img src="assets/images/avatar1.png" alt="">
+  </ion-avatar>
+  <div class="post-center">
+    <ion-textarea placeholder="O que está pensando?" [(ngModel)]="newPostText"></ion-textarea>
+    <button class="publish-button" (click)="publishPost()" style="color: #fff !important;">Publicar</button>
+  </div>
+  <div class="post-aside" (click)="openFileSelector($event)">
+    <ion-icon name="albums" class="album"></ion-icon>
+    <p>foto</p>
+    <input type="file" accept="image/*" (change)="onFileSelected($event)" style="display: none;" #fileInput>
+  </div>
+</div>
+
+<!-- Publicações -->
+<div class="post" *ngIf="showPost">
+  <div class="post-header">
+    <ion-avatar>
+      <img src="assets/images/avatar1.png" alt="">
+    </ion-avatar>
+    <h4 style="color: #202020">Eu</h4>
+    <p style="color: #202020">agora</p>
+  </div>
+  <div class="post-content">
+    <p style="color: #202020">{{ newPostText }}</p>
+    <ng-container *ngFor="let image of newPostImages">
+      <img [src]="image" alt="">
+    </ng-container>
+  </div>
+  <div class="post-actions">
+    <ion-icon name="thumbs-up-outline"></ion-icon>
+    <ion-icon name="chatbox-outline"></ion-icon>
+    <ion-icon name="share-outline"></ion-icon>
+  </div>
+</div>
+
+  <!-- Publicações -->
+  <div class="post">
+    <div class="post-header">
+      <ion-avatar>
+        <img src="assets/images/avatar2.png" alt="">
+      </ion-avatar>
+      <h4 style="color: #202020">João Silva</h4>
+      <p style="color: #202020">2h</p>
+    </div>
+    <div class="post-content">
+      <p style="color: #202020">Olá pessoal, aqui está uma foto incrível que tirei nas minhas férias!</p>
+      <img src="assets/images/floripa.jpg" alt="">
+    </div>
+    <div class="post-actions">
+      <ion-icon name="thumbs-up-outline"></ion-icon>
+      <ion-icon name="chatbox-outline"></ion-icon>
+      <ion-icon name="share-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <ion-avatar>
+        <img src="assets/images/avatar1.png" alt="">
+      </ion-avatar>
+      <h4 style="color: #202020">Maria Souza</h4>
+      <p style="color: #202020">1d</p>
+    </div>
+    <div class="post-content">
+      <p style="color: #202020">Adorei o novo restaurante da cidade, recomendo a todos!</p>
+      <img src="assets/images/restaurante-quinha.jpg" alt="">
+    </div>
+    <div class="post-actions">
+      <ion-icon name="thumbs-up-outline"></ion-icon>
+      <ion-icon name="chatbox-outline"></ion-icon>
+      <ion-icon name="share-outline"></ion-icon>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="post-header">
+      <ion-avatar>
+        <img src="assets/images/avatar2.png" alt="">
+      </ion-avatar>
+      <h4 style="color: #202020">Jean Lopes</h4>
+      <p style="color: #202020">2d</p>
+    </div>
+    <div class="post-content">
+      <p style="color: #202020">Foto do evento que participei na última semana!</p>
+      <img src="assets/images/tec.jpg" alt="">
+    </div>
+    <div class="post-actions">
+      <ion-icon name="thumbs-up-outline"></ion-icon>
+      <ion-icon name="chatbox-outline"></ion-icon>
+      <ion-icon name="share-outline"></ion-icon>
+    </div>
+  </div>
+
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+
+  <div class="main-menu">
+    <h3>facebook</h3>
+    <div class="primary-menu">
+      <ion-icon name="search"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Slider container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+    </div>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="notifications-container">
+    <!-- Lista de notificações -->
+    <ion-list>
+      <ion-item *ngFor="let notification of notifications">
+        <ion-label>
+          <h2>{{ notification.title }}</h2>
+          <p>{{ notification.content }}</p>
+          <p class="notification-time">{{ notification.time }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

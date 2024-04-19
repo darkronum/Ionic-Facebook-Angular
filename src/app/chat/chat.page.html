@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+
+  <div class="main-menu">
+    <h3>facebook</h3>
+    <div class="primary-menu">
+      <ion-icon name="search"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Slider container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+    </div>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" style="background: #fff !important; color: #202020 !important;">
+  <ion-content [fullscreen]="true" style="background: #fff !important; color: #202020 !important;">
+    <div class="chat-container" style="background: #fff !important; color: #202020 !important;">
+      <!-- Lista de conversas -->
+      <ion-list style="background: #fff !important; color: #202020 !important;">
+        <ion-item>
+          <ion-avatar slot="start">
+            <img src="assets/images/avatar1.png" alt="User Avatar">
+          </ion-avatar>
+          <ion-label>
+            <h2>Nome do Amigo</h2>
+            <p>Visto há 2h</p>
+          </ion-label>
+        </ion-item>
+        <!-- Outros itens da lista de conversas aqui -->
+      </ion-list>
+
+      <!-- Mensagens da conversa -->
+      <div class="message-container">
+        <!-- Mensagens anteriores -->
+        <div class="message received">
+          <div class="message-content">
+            <p>vc estuda no brisolo</p>
+          </div>
+        </div>
+        <!-- Mensagens enviadas -->
+        <div class="message sent">
+          <div class="message-content">
+            <p style="color: #202020 !important">vc ñ ta me conhecendo ñ rayane</p>
+          </div>
+        </div>
+        <!-- Mensagens anteriores -->
+        <div class="message received">
+          <div class="message-content">
+            <p>como vc sabi o meu nome</p>
+          </div>
+        </div>
+        <!-- Mensagens anteriores -->
+        <div class="message received">
+          <div class="message-content">
+            <p>???</p>
+          </div>
+        </div>
+        <!-- Mensagens enviadas -->
+        <div class="message sent">
+          <div class="message-content">
+            <p style="color: #202020 !important">ta no face</p>
+          </div>
+        </div>
+        <!-- Mensagens anteriores -->
+        <div class="message received">
+          <div class="message-content">
+            <p>to</p>
+          </div>
+        </div>
+        <!-- Outras mensagens aqui -->
+      </div>
+
+      <!-- Caixa de entrada de mensagem -->
+      <ion-row>
+        <ion-toolbar>
+          <ion-input type="text" placeholder="Digite sua mensagem..."></ion-input>
+          <ion-button slot="end" color="primary">Enviar</ion-button>
+        </ion-toolbar>
+      </ion-row>
+    </div>
+  </ion-content>

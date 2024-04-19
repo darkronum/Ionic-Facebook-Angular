@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+
+  <div class="main-menu">
+    <h3>facebook</h3>
+    <div class="primary-menu">
+      <ion-icon name="search"></ion-icon>
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </div>
+
+  <!-- Slider container -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="home" routerLink="/home"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="person" routerLink="/profile"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="chatbubble" routerLink="/chat"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="notifications" routerLink="/notifications"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="people" routerLink="/groups"></ion-icon></div>
+      <div class="swiper-slide"><ion-icon name="desktop" routerLink="/devices"></ion-icon></div>
+    </div>
+  </div>
+
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="devices-container">
+    <!-- Dispositivos conectados -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Dispositivos Conectados</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let device of connectedDevices">
+            <ion-icon name="phone-portrait" slot="start"></ion-icon>
+            <ion-label>{{ device.name }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Sugestões de Segurança</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Ative a autenticação em dois fatores para maior segurança.</p>
+        <p>Revise as permissões de aplicativos em seus dispositivos regularmente.</p>
+        <p>Mantenha seus dispositivos e aplicativos atualizados.</p>
+        <p>Não compartilhe senhas ou informações pessoais com desconhecidos.</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

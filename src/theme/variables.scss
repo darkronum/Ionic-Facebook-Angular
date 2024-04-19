@@ -1,0 +1,133 @@
+// For information on how to create your own theme, please see:
+// http://ionicframework.com/docs/theming/
+// -----------------------------------------------------
+// |||||||||||||||||| Ionic Variables ||||||||||||||||||
+// -----------------------------------------------------
+
+:root{
+
+  // Global Variables
+  // ------------------------------
+
+  --ion-text-color: #333;
+  --ion-background-color: #fff;
+  --ion-border-color: #c8c7cc;
+
+  // Primary Colors
+  // ------------------------------
+  --ion-color-primary: #3880ff;
+  --ion-color-primary-rgb: 56, 128, 255;
+  --ion-color-primary-contrast: #fff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+
+  // Secondary Colors
+  // ------------------------------
+  --ion-color-secondary: #32db64;
+  --ion-color-secondary-rgb: 50, 219, 100;
+  --ion-color-secondary-contrast: #fff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+
+  // Tertiary Colors
+  // ------------------------------
+  --ion-color-tertiary: #7044ff;
+  --ion-color-tertiary-rgb: 122, 68, 255;
+  --ion-color-tertiary-contrast: #fff;
+  --ion-color-tertiary-contrast-rgb: 255, 255, 255;
+
+  // Success Colors
+  // ------------------------------
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #fff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+
+  // Warning Colors
+  // ------------------------------
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+
+  // Danger Colors
+  // ------------------------------
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #fff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+
+  // Dark Colors
+  // ------------------------------
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 34, 34;
+  --ion-color-dark-contrast: #fff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+
+  // Medium Colors
+  // ------------------------------
+  --ion-color-medium: #989aa2;
+  --ion-color-medium-rgb: 152, 154, 162;
+  --ion-color-medium-contrast: #fff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+
+  // Light Colors
+  // ------------------------------
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+
+  // Background Colors
+  // ------------------------------
+  --ion-background-color: #fff;
+  --ion-background-color-rgb: 255, 255, 255;
+
+  // Border Colors
+  // ------------------------------
+  --ion-border-color: #c8c7cc;
+  --ion-border-color-rgb: 200, 199, 204;
+
+  // Text Colors
+  // ------------------------------
+  --ion-text-color: #333;
+  --ion-text-color-rgb: 51, 51, 51;
+  --ion-text-color-contrast: #fff;
+  --ion-text-color-contrast-rgb: 255, 255, 255;
+
+  // Button Colors
+  // ------------------------------
+  --ion-button-color: #555;
+  --ion-button-color-rgb: 34, 34, 34;
+  --ion-button-background-color: #eaeaea;
+  --ion-button-background-color-rgb: 234, 234, 234;
+
+  // Input Colors
+  // ------------------------------
+  --ion-input-background-color: #fff;
+  --ion-input-background-color-rgb: 255, 255, 255;
+  --ion-input-border-color: #c8c7cc;
+  --ion-input-border-color-rgb: 200, 199, 204;
+
+  // Checkbox Colors
+  // ------------------------------
+  --ion-checkbox-background-color: #fff;
+  --ion-checkbox-background-color-rgb: 255, 255, 255;
+
+  // Radio Colors
+  // ------------------------------
+  --ion-radio-background-color: #fff;
+  --ion-radio-background-color-rgb: 255, 255, 255;
+
+  // Toggle Colors
+  // ------------------------------
+  --ion-toggle-background-color: #fff;
+  --ion-toggle-background-color-rgb: 255, 255, 255;
+
+  // Toolbar Colors
+  // ------------------------------
+  --ion-toolbar-background-color: #f8f8f8;
+  --ion-toolbar-background-color-rgb: 248, 248, 248;
+  --ion-toolbar-color: #000;
+  --ion-toolbar-color-rgb: 0, 0, 0;
+
+
+}
